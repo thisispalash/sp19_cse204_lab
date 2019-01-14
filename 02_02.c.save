@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+  double n;
+  printf("Enter decimal number pls: ");
+  scanf("%lf",&n);
+  if(n<0){
+    printf("Number is negative pls try again\n");
+    return 0;
+  }
+  if(n>1){
+    char dec[] = get_whole(n), frac[] = get_fract(n);
+  } else {
+    char dec = , frac
+printf("%lf in binary is: 0b%s.",n,dec);
+    for(; i<4; i++){
+      printf("%d",frac[i]);
+      if(i>strlen(frac)){ break; }
+    }
+    if(i==4){
+      printf("..");
+    }
