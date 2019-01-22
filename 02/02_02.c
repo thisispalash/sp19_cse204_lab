@@ -1,13 +1,5 @@
 #include <stdio.h>
 
-char[] get_whole(int n){
-  return {};
-}
-
-char[] get_fract(int n){
-  return {};
-}
-
 int main() {
   double n;
   printf("Enter decimal number pls: ");
@@ -17,17 +9,29 @@ int main() {
     return 0;
   }
   if(n>1){
-    char dec[] = get_whole(n), frac[] = get_fract(n);
-  } else {
-    char dec[] = {'0','\0'} , frac[] = get_fract(n);
+    printf("Number is too big senpai!\n");
+    return 0;
   }
-  printf("%lf in binary is: 0b%s.",n,dec);
-  for(; i<4; i++){
-    printf("%c",frac[i]);
-    if(i>strlen(frac)){ break; }
+  char bin[4];
+  int counter = 0;
+  while(counter<4){
+    n*=2;
+    if(n == 1.0){
+      strcat(bin,"1");
+      break;
+    }
+    if(n>1.0) {
+      strcat(bin,"1");
+      n--;
+    }
+    else
+      strcat(bin,"0");
+    counter++;
   }
-  if(i==4){
-    printf("..");
-  }
+  printf("Binary: 0b0.%s",&bin);
+  if(counter==4)
+    printf("..\n");
+  else
+    printf("\n");
   return 0;
 }
