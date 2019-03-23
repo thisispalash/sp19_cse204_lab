@@ -4,6 +4,7 @@
 double fcfs(int *p, int n) {
   int time = 0, wait = 0;
   for(int i=0; i<n*PROPS; i+=PROPS) {
+    wait += time - p[i+1];
     time += p[i]; // Change to wait time not burst
   }
   return (wait / (double) n);
