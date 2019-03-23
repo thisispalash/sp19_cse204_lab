@@ -6,15 +6,15 @@ int main() {
   int n;
   printf("Enter number of processes: ");
   scanf("%d",&n);
-  int p[n][PROPS];
+  Process p[n];
   for(int i=0; i<n; i++) {
     printf("For process %d, enter the following:\n",i);
     printf("Burst time (ms): ");
-    scanf("%d", &p[i][0]);
+    scanf("%d", &p[i].burst);
     printf("Arrival time (ms): ");
-    scanf("%d", &p[i][1]);
+    scanf("%d", &p[i].arrival);
     printf("Priority (1 is highest): ");
-    scanf("%d", &p[i][2]);
+    scanf("%d", &p[i].priority);
   }
   // Choose Algorithm
   int choice;
