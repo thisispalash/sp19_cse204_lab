@@ -1,13 +1,16 @@
+#include <stdlib.h> // qsort
+
+// Constants
 #define QUANTUM 1
 
-#ifndef PROCESS
-#define PROCESS
+// Process Struct
 typedef struct {
   int burst;
   int arrival;
   int priority;
 } Process;
-#endif
 
-// qsort comparators
+// comparators
+int first_come_first_serve(const void *a, const void *b);
+int shortest_job_first(const void *a, const void *b);
 int priority_first(const void *a, const void *b);

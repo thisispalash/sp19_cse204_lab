@@ -1,11 +1,4 @@
 #include "consts.h"
-#include <stdlib.h>
-
-int first_come_first_serve(const void *a, const void *b){
-  Process *A = (Process *) a;
-  Process *B = (Process *) b;
-  return (A->arrival - B->arrival);
-}
 
 double fcfs(Process *p, int n) {
   qsort(p, n, sizeof(Process), first_come_first_serve);
