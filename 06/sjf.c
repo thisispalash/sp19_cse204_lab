@@ -1,4 +1,3 @@
-// Shortest Job First
 #include "consts.h"
 #include <stdlib.h>
 
