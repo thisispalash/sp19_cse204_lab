@@ -1,4 +1,5 @@
-Menu Based Program
+**Menu Based Program**
 
 `$ make`
+
 `$ ./run`

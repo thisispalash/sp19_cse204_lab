@@ -2,6 +2,7 @@
 
 // Constants
 #define QUANTUM 1
+#define QUEUES 2
 
 // Process Struct
 typedef struct {
