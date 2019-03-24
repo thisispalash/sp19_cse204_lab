@@ -1,33 +1,16 @@
 # Lab Files for CSE 204 [OS]
 
-***
+## Directory Structure
 
-## Programs Info
+`/pdf`: Released PDF files
 
-1. `./01/` - Intro to Linux
-> Released `pdf/lab01.pdf`
+`/??`: source files for each lab
 
+## Lab details
 
-2. `./02/` - Intro to C
-> Released: `pdf/lab02.pdf`
-
-
-3. `./03/` - Arrays and functions
-> Released: `pdf/lab03.pdf`
-
-
-4. `./04/` - Pointers
-> Released: `pdf/lab04.pdf`
-
-
-5. `./05/` - System Calls
-> Released: `pdf/lab05.pdf`
-
-
-6. `./06/` - Scheduling Algorithms
-> Released: `pdf/lab06.pdf`
-
-> Run `06/main` for the menu driven program of scheduling algorithms
-
-
-7. 
+- `lab01`: Intro to Linux
+- `lab02`: Intro to C
+- `lab03`: Arrays and functions
+- `lab04`: Pointers
+- `lab05`: System Calls
+- `lab06`: Scheduling Algorithms
