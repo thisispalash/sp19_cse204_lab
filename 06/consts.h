@@ -9,9 +9,11 @@ typedef struct {
   int burst;
   int arrival;
   int priority;
+  int age;
 } Process;
 
 // comparators
 int first_come_first_serve(const void *a, const void *b);
 int shortest_job_first(const void *a, const void *b);
 int priority_first(const void *a, const void *b);
+int lowest_age(const void *a, const void *b);

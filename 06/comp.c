@@ -21,3 +21,9 @@ int priority_first(const void *a, const void *b) {
     return -1;
   return (A->arrival - B->arrival);
 }
+
+int lowest_age(const void *a, const void *b) {
+  Process *A = (Process *) a;
+  Process *B = (Process *) b;
+  return (A->age - B->age);
+}

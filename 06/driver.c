@@ -15,6 +15,7 @@ int main() {
     scanf("%d", &p[i].arrival);
     printf("Priority (1 is highest): ");
     scanf("%d", &p[i].priority);
+    p[i].age = 0;
   }
   // Choose Algorithm
   int choice;
